@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ExampleCode" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:navigationBarColor">@color/background_super_dark</item>
+        <item name="android:statusBarColor">@color/background_super_dark</item>
+        <item name="android:textColorHint">@color/hint_disabled_dark</item>
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+        <item name="android:colorEdgeEffect">@color/mid_grey</item>
+    </style>
+
+    <style name="ExampleCode.Translucent">
+        <!-- using a semi-transparent window background for the drag-back gesture -->
+        <item name="android:windowBackground">@color/scrim</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="ExampleCode.Translucent.ElasticDragLayoutActvity">
+        <item name="android:windowEnterTransition">@transition/layout_enter</item>
+        <item name="android:windowReturnTransition">@transition/layout_return</item>
+    </style>
+
+    <style name="ExampleCode.Translucent.InkViewPagerIndicatorActivity">
+        <item name="android:windowEnterTransition">@transition/layout_enter</item>
+        <item name="android:windowReturnTransition">@transition/layout_return</item>
+    </style>
+
+    <style name="ExampleCode.Translucent.FabToggleActivity">
+        <item name="android:windowEnterTransition">@transition/layout_enter</item>
+        <item name="android:windowReturnTransition">@transition/layout_return</item>
+    </style>
+
+    <style name="ExampleCode.Translucent.FabDetailActivity">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:colorPrimary">@color/designer_news</item>
+        <item name="android:colorAccent">@color/designer_news</item>
+        <item name="android:colorControlActivated">@color/designer_news</item>
+    </style>
+
+
+</resources>

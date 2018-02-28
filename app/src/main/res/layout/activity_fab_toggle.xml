@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heisen_berg.examplecode.ui.ElasticDragDismissLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:dragDismissDistance="112dp"
+    app:dragDismissScale="0.95"
+    android:id="@+id/draggable_frame"
+    tools:context="com.heisen_berg.examplecode.fabtoggle.FabToggleActivity">
+
+    <ScrollView
+        android:background="@color/background_dark"
+        android:nestedScrollingEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.heisen_berg.examplecode.ui.TextViewIosBold
+                        android:textSize="32sp"
+                        android:layout_marginTop="32dp"
+                        android:textColor="@android:color/white"
+                        android:text="Fab Toggle Example"
+                        android:letterSpacing="0.03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.heisen_berg.examplecode.ui.TextViewIosRegular
+                        android:layout_marginTop="16dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        android:letterSpacing="0.02"
+                        android:text="This is demo activity showing Fab Toggle Example.\n\nClick Fab icon below to view it."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/fab"
+        android:onClick="fabClicked"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fab"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_github" />
+
+</com.heisen_berg.examplecode.ui.ElasticDragDismissLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    android:overScrollMode="never"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.heisen_berg.examplecode.ui.TextViewIosBold
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:layout_marginTop="32dp"
+        android:letterSpacing="0.03"
+        android:text="Ink ViewPager Indicator Example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.heisen_berg.examplecode.ui.TextViewIosRegular
+        android:id="@+id/text_view"
+        android:layout_marginTop="16dp"
+        android:textSize="22sp"
+        android:letterSpacing="0.02"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>

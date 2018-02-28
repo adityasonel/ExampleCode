@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heisen_berg.examplecode.ui.ElasticDragDismissLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:dragDismissDistance="112dp"
+    app:dragDismissScale="0.95"
+    android:id="@+id/draggable_frame"
+    tools:context=".elasticdraglayout.ElasticDragLayoutActivity">
+
+        <ScrollView
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:background="@color/background_dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <com.heisen_berg.examplecode.ui.TextViewIosBold
+                            android:textSize="32sp"
+                            android:layout_marginTop="32dp"
+                            android:textColor="@android:color/white"
+                            android:text="Elastic Drag Layout Example"
+                            android:letterSpacing="0.03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.heisen_berg.examplecode.ui.TextViewIosRegular
+                            android:layout_marginTop="16dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"
+                            android:letterSpacing="0.02"
+                            android:text="This is demo activity to show the use of Elastic DragLayout created by Nick Butcher very well known personality in the world of Android Application Development. He is the grand master in the field of android applications. You can also check this Elastic DragLayout in Nick Butcher's library named Plaid on Github.\n\nI am show casing Elastic DragLayout from it's library just because Plaid is like a ocean full with the pure Material Android Application Principle's.\n\nThat's why I created this library. This library is just a sea of Material Android Application Examples."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </LinearLayout>
+        </ScrollView>
+
+</com.heisen_berg.examplecode.ui.ElasticDragDismissLayout>

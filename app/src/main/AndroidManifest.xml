@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.heisen_berg.examplecode">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/ExampleCode">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".elasticdraglayout.ElasticDragLayoutActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExampleCode.Translucent.ElasticDragLayoutActvity" />
+        <activity
+            android:name=".inkviewpagerindicator.InkViewPagerIndicatorActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExampleCode.Translucent.InkViewPagerIndicatorActivity" />
+        <activity
+            android:name=".fabtoggle.FabToggleActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExampleCode.Translucent.FabToggleActivity" />
+        <activity
+            android:theme="@style/ExampleCode.Translucent.FabDetailActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".fabtoggle.FabToggleActivity"
+            android:name=".fabtoggle.FabDetailActivity" />
+    </application>
+
+</manifest>

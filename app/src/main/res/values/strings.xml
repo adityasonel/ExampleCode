@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExampleCode</string>
+
+    <string name="transition_designer_news_login" translatable="false">transition_designer_news_login</string>
+</resources>
