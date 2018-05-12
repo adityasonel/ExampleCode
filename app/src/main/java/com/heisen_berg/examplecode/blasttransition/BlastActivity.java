@@ -14,6 +14,7 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.heisen_berg.examplecode.R;
@@ -21,6 +22,7 @@ import com.heisen_berg.examplecode.app.Config;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class BlastActivity extends AppCompatActivity {
 
@@ -80,6 +82,11 @@ public class BlastActivity extends AppCompatActivity {
             flLottieView.setVisibility(View.INVISIBLE);
             playAnimation();
         }, 2200);
+    }
+
+    @OnClick(R.id.tv_login)
+    public void onClickFbLogin() {
+        Toast.makeText(this, "Wow, you are awesome!", Toast.LENGTH_SHORT).show();
     }
 
     void initializeAnimators() {

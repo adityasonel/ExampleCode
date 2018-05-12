@@ -7,8 +7,15 @@
     android:background="@android:color/white"
     tools:context=".blasttransition.BlastActivity">
 
+    <ImageView
+        android:foreground="#C0ffffff"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pattern_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <com.heisen_berg.examplecode.ui.TextViewIosBold
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="72dp"
         android:id="@+id/tv_title"
         android:layout_centerHorizontal="true"
         android:textSize="52sp"
@@ -139,7 +146,7 @@
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
+        <com.heisen_berg.examplecode.ui.TextViewIosRegular
             android:visibility="gone"
             android:id="@+id/tv_login"
             android:translationZ="12dp"
@@ -151,6 +158,7 @@
             android:text="Login with Facebook"
             android:gravity="center"
             android:background="@drawable/text_view_fb_login"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <View
