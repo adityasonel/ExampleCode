@@ -50,5 +50,7 @@
         <item name="android:colorControlActivated">@color/designer_news</item>
     </style>
 
-
+    <style name="BlastActivityTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/white</item>
+    </style>
 </resources>

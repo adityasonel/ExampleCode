@@ -10,9 +10,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import com.heisen_berg.examplecode.blasttransition.BlastActivity;
 import com.heisen_berg.examplecode.elasticdraglayout.ElasticDragLayoutActivity;
 import com.heisen_berg.examplecode.fabtoggle.FabToggleActivity;
 import com.heisen_berg.examplecode.inkviewpagerindicator.InkViewPagerIndicatorActivity;
+import com.heisen_berg.examplecode.loginsignupanim.activity.LoginSignupActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -57,6 +59,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void startFabToggleActivity(View view) {
         startActivity(new Intent(MainActivity.this, FabToggleActivity.class),
+                ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+    }
+
+    public void startLoginAignupActivity(View view) {
+        startActivity(new Intent(MainActivity.this, LoginSignupActivity.class),
+                ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+    }
+
+    public void startBlastActivity(View view) {
+        startActivity(new Intent(MainActivity.this, BlastActivity.class),
                 ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 }

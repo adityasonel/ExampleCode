@@ -34,10 +34,20 @@
             android:screenOrientation="portrait"
             android:theme="@style/ExampleCode.Translucent.FabToggleActivity" />
         <activity
-            android:theme="@style/ExampleCode.Translucent.FabDetailActivity"
-            android:screenOrientation="portrait"
+            android:name=".fabtoggle.FabDetailActivity"
             android:parentActivityName=".fabtoggle.FabToggleActivity"
-            android:name=".fabtoggle.FabDetailActivity" />
+            android:screenOrientation="portrait"
+            android:theme="@style/ExampleCode.Translucent.FabDetailActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:name=".loginsignupanim.activity.LoginSignupActivity" />
+
+        <activity
+            android:theme="@style/BlastActivityTheme"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:name=".blasttransition.BlastActivity" />
     </application>
 
 </manifest>
