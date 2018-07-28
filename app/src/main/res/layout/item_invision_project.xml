@@ -1,0 +1,50 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.v7.widget.CardView
+    android:id="@+id/cv_item_invisionproject"
+    android:layout_gravity="center"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="416dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_main"
+            android:src="@drawable/relate"
+            android:transitionName="iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="280dp" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_main"
+                    android:textColor="#404040"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/alegreya_sans_sc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_tagline"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/alegreya_sans_sc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</FrameLayout>

@@ -31,15 +31,16 @@
         tools:context="com.heisen_berg.examplecode.MainActivity">
 
         <android.support.v7.widget.CardView
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp"
             app:cardUseCompatPadding="true"
             android:onClick="startElasticDragLayoutActivity"
             android:foreground="?attr/selectableItemBackground"
             android:layout_marginBottom="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.heisen_berg.examplecode.ui.TextViewIosBold
+            <TextView
+                android:fontFamily="@font/ios_font_bold"
                 android:text="Elastic Drag\nLayout"
                 android:gravity="center|left"
                 android:paddingLeft="32dp"
@@ -53,14 +54,15 @@
 
         <android.support.v7.widget.CardView
             app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardElevation="6dp"
             app:cardUseCompatPadding="true"
             android:onClick="startInkViewPagerIndicatorActivity"
             android:foreground="?attr/selectableItemBackground"
             android:layout_marginBottom="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.heisen_berg.examplecode.ui.TextViewIosBold
+            <TextView
+                android:fontFamily="@font/ios_font_bold"
                 android:text="Ink ViewPager\nIndicator"
                 android:gravity="center|left"
                 android:paddingLeft="32dp"
@@ -74,14 +76,15 @@
 
         <android.support.v7.widget.CardView
             app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardElevation="6dp"
             app:cardUseCompatPadding="true"
             android:onClick="startFabToggleActivity"
             android:foreground="?attr/selectableItemBackground"
             android:layout_marginBottom="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.heisen_berg.examplecode.ui.TextViewIosBold
+            <TextView
+                android:fontFamily="@font/ios_font_bold"
                 android:text="Fab Toggle Activity"
                 android:gravity="center|left"
                 android:paddingLeft="32dp"
@@ -95,35 +98,37 @@
 
         <android.support.v7.widget.CardView
             app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardElevation="6dp"
             app:cardUseCompatPadding="true"
-            android:onClick="startLoginAignupActivity"
+            android:onClick="startInvisionProject"
             android:foreground="?attr/selectableItemBackground"
             android:layout_marginBottom="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.heisen_berg.examplecode.ui.TextViewIosBold
-                android:text="Login Signup Activity"
+            <TextView
+                android:fontFamily="@font/ios_font_bold"
+                android:text="Invision Project"
                 android:gravity="center|left"
                 android:paddingLeft="32dp"
                 android:letterSpacing="0.04"
                 android:textSize="22sp"
-                android:background="@drawable/text_view_login_signup_activity"
-                android:id="@+id/activity_login_signup"
+                android:background="@drawable/text_view_invision_project"
+                android:id="@+id/activity_invision_project"
                 android:layout_width="match_parent"
                 android:layout_height="100dp" />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardElevation="6dp"
             app:cardUseCompatPadding="true"
             android:onClick="startBlastActivity"
             android:foreground="?attr/selectableItemBackground"
             android:layout_marginBottom="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.heisen_berg.examplecode.ui.TextViewIosBold
+            <TextView
+                android:fontFamily="@font/ios_font_bold"
                 android:text="Blast Activity"
                 android:gravity="center|left"
                 android:paddingLeft="32dp"

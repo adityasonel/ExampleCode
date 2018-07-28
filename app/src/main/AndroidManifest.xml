@@ -39,15 +39,20 @@
             android:screenOrientation="portrait"
             android:theme="@style/ExampleCode.Translucent.FabDetailActivity" />
         <activity
-            android:screenOrientation="portrait"
+            android:name=".blasttransition.BlastActivity"
             android:parentActivityName=".MainActivity"
-            android:name=".loginsignupanim.activity.LoginSignupActivity" />
-
+            android:screenOrientation="portrait"
+            android:theme="@style/BlastActivityTheme" />
         <activity
-            android:theme="@style/BlastActivityTheme"
+            android:name=".invisionproject.InvisionActivity"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:name=".blasttransition.BlastActivity" />
+            android:theme="@style/InvisionProject" />
+        <activity
+            android:name=".invisionproject.ProjectViewActivity"
+            android:parentActivityName=".invisionproject.InvisionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/InvisionProject"/>
     </application>
 
 </manifest>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".invisionproject.InvisionActivity">
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/alegreya_sans_sc"
+                android:gravity="center"
+                android:text="SPACES"
+                android:textColor="#FF1493"
+                android:textSize="12sp" />
+            <View
+                android:layout_gravity="bottom"
+                android:background="#FF1493"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+        </FrameLayout>
+        <TextView
+            android:text="PROTOTYPES"
+            android:fontFamily="@font/alegreya_sans_sc"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="BOARDS"
+            android:textSize="12sp"
+            android:fontFamily="@font/alegreya_sans_sc"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="FAVORITES"
+            android:textSize="12sp"
+            android:fontFamily="@font/alegreya_sans_sc"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_centerInParent="true"
+        android:id="@+id/vp_invisonproject"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="wrap_content"
+        android:layout_height="416dp" />
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:src="@drawable/ic_folder"
+            android:scaleType="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/ic_notification"
+            android:scaleType="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/ic_user"
+            android:scaleType="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fl_lottieanimview"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lav"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/loading_simple"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</RelativeLayout>

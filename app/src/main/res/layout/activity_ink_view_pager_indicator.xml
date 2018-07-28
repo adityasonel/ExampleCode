@@ -9,22 +9,35 @@
     android:id="@+id/draggable_frame"
     tools:context="com.heisen_berg.examplecode.inkviewpagerindicator.InkViewPagerIndicatorActivity">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/view_pager"
-        android:overScrollMode="never"
-        android:background="@color/background_dark"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
 
-    <com.heisen_berg.examplecode.ui.InkPageIndicator
-        android:id="@+id/view_pager_indicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:dotDiameter="10dp"
-        app:dotGap="12dp"
-        android:layout_gravity="bottom|center_horizontal"
-        app:pageIndicatorColor="@color/page_indicator_dark"
-        app:currentPageIndicatorColor="@color/page_indicator_dark_selected"/>
+        <ImageView
+            android:foreground="#90000000"
+            android:background="@drawable/pattern_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.heisen_berg.examplecode.ui.InkPageIndicator
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/view_pager_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:dotDiameter="10dp"
+            app:dotGap="12dp"
+            android:layout_gravity="bottom|center_horizontal"
+            app:pageIndicatorColor="@color/page_indicator_dark"
+            app:currentPageIndicatorColor="@color/page_indicator_dark_selected"/>
+
+    </RelativeLayout>
 
 </com.heisen_berg.examplecode.ui.ElasticDragDismissLayout>

@@ -14,7 +14,7 @@ import com.heisen_berg.examplecode.blasttransition.BlastActivity;
 import com.heisen_berg.examplecode.elasticdraglayout.ElasticDragLayoutActivity;
 import com.heisen_berg.examplecode.fabtoggle.FabToggleActivity;
 import com.heisen_berg.examplecode.inkviewpagerindicator.InkViewPagerIndicatorActivity;
-import com.heisen_berg.examplecode.loginsignupanim.activity.LoginSignupActivity;
+import com.heisen_berg.examplecode.invisionproject.InvisionActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -62,13 +62,13 @@ public class MainActivity extends AppCompatActivity {
                 ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
-    public void startLoginAignupActivity(View view) {
-        startActivity(new Intent(MainActivity.this, LoginSignupActivity.class),
+    public void startBlastActivity(View view) {
+        startActivity(new Intent(MainActivity.this, BlastActivity.class),
                 ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
-    public void startBlastActivity(View view) {
-        startActivity(new Intent(MainActivity.this, BlastActivity.class),
+    public void startInvisionProject(View view) {
+        startActivity(new Intent(MainActivity.this, InvisionActivity.class),
                 ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 }

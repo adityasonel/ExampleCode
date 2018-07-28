@@ -14,17 +14,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.heisen_berg.examplecode.ui.TextViewIosBold
+    <TextView
         android:layout_marginTop="72dp"
         android:id="@+id/tv_title"
+        android:fontFamily="@font/ios_font_bold"
         android:layout_centerHorizontal="true"
         android:textSize="52sp"
         android:textColor="#67656F"
         android:text="BLAST"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <com.heisen_berg.examplecode.ui.TextViewIosRegular
+    <TextView
         android:id="@+id/tv_tagline"
+        android:fontFamily="@font/ios_font_regular"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/tv_title"
         android:text="REVIEW THAT MATTER"
@@ -146,8 +148,9 @@
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.heisen_berg.examplecode.ui.TextViewIosRegular
+        <TextView
             android:visibility="gone"
+            android:fontFamily="@font/ios_font_regular"
             android:id="@+id/tv_login"
             android:translationZ="12dp"
             android:layout_marginLeft="62dp"
@@ -177,6 +180,7 @@
             android:id="@+id/lav"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
+            app:lottie_cacheStrategy="strong"
             app:lottie_rawRes="@raw/lego_loader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

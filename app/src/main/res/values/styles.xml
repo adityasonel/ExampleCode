@@ -32,6 +32,7 @@
     </style>
 
     <style name="ExampleCode.Translucent.InkViewPagerIndicatorActivity">
+        <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowEnterTransition">@transition/layout_enter</item>
         <item name="android:windowReturnTransition">@transition/layout_return</item>
     </style>
@@ -50,7 +51,20 @@
         <item name="android:colorControlActivated">@color/designer_news</item>
     </style>
 
+    <style name="LoginSignupActivity" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
     <style name="BlastActivityTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="InitialTestTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="InvisionProject" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentTransitions">true</item>
     </style>
 </resources>

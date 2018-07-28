@@ -22,7 +22,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                        <com.heisen_berg.examplecode.ui.TextViewIosBold
+                        <TextView
+                            android:fontFamily="@font/ios_font_bold"
                             android:textSize="32sp"
                             android:layout_marginTop="32dp"
                             android:textColor="@android:color/white"
@@ -31,7 +32,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
 
-                        <com.heisen_berg.examplecode.ui.TextViewIosRegular
+                        <TextView
+                            android:fontFamily="@font/ios_font_regular"
                             android:layout_marginTop="16dp"
                             android:textColor="@android:color/white"
                             android:textSize="22sp"

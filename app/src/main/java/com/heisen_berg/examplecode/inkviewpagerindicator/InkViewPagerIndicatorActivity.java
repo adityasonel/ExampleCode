@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.heisen_berg.examplecode.R;
 import com.heisen_berg.examplecode.ui.ElasticDragDismissLayout;
 import com.heisen_berg.examplecode.ui.InkPageIndicator;
+import com.heisen_berg.examplecode.ui.ParallaxPageTransformer;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -35,6 +36,8 @@ public class InkViewPagerIndicatorActivity extends AppCompatActivity {
     @BindView(R.id.draggable_frame)
     ElasticDragDismissLayout dragDismissLayout;
 
+    ParallaxPageTransformer parallaxPageTransformer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +45,10 @@ public class InkViewPagerIndicatorActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         ViewPagerAdapter adapter = new ViewPagerAdapter();
         viewPager.setAdapter(adapter);
-        viewPager.setPageMargin(8);
+        parallaxPageTransformer = new ParallaxPageTransformer()
+                .addViewToParallax(new ParallaxPageTransformer.ParallaxTransformInformation(R.id.text_view, 2f, 2f))
+                .addViewToParallax(new ParallaxPageTransformer.ParallaxTransformInformation(R.id.tv, 4f, 4f));
+        viewPager.setPageTransformer(true, parallaxPageTransformer);
         inkPageIndicator.setViewPager(viewPager);
 
         dragDismissLayout.addListener(
@@ -59,7 +65,7 @@ public class InkViewPagerIndicatorActivity extends AppCompatActivity {
                 });
     }
 
-    class ViewPagerAdapter extends PagerAdapter{
+    private class ViewPagerAdapter extends PagerAdapter{
 
         private LayoutInflater layoutInflater;
 

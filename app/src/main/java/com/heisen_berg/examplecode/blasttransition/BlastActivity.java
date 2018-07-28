@@ -75,13 +75,15 @@ public class BlastActivity extends AppCompatActivity {
 
         lottieAnimationView.buildDrawingCache();
 
-        initializeAnimators();
+        if (savedInstanceState == null) {
+            initializeAnimators();
 
-        Handler handler = new Handler();
-        handler.postDelayed(() -> {
-            flLottieView.setVisibility(View.INVISIBLE);
-            playAnimation();
-        }, 2200);
+            Handler handler = new Handler();
+            handler.postDelayed(() -> {
+                flLottieView.setVisibility(View.INVISIBLE);
+                playAnimation();
+            }, 2200);
+        }
     }
 
     @OnClick(R.id.tv_login)
