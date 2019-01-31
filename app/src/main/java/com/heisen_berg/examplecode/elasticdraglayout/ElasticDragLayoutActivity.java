@@ -2,7 +2,7 @@ package com.heisen_berg.examplecode.elasticdraglayout;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.transition.TransitionInflater;
 
 import com.heisen_berg.examplecode.R;

@@ -2,16 +2,14 @@ package com.heisen_berg.examplecode.fabtoggle;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.TransitionInflater;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import com.heisen_berg.examplecode.R;
-import com.heisen_berg.examplecode.elasticdraglayout.ElasticDragLayoutActivity;
 import com.heisen_berg.examplecode.ui.ElasticDragDismissLayout;
 import com.heisen_berg.examplecode.ui.FabTransform;
 

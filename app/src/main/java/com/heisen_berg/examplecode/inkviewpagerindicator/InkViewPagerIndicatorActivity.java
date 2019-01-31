@@ -1,15 +1,10 @@
 package com.heisen_berg.examplecode.inkviewpagerindicator;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.Spannable;
-import android.text.SpannableStringBuilder;
-import android.text.style.ForegroundColorSpan;
-import android.text.style.RelativeSizeSpan;
 import android.transition.TransitionInflater;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,9 +15,6 @@ import com.heisen_berg.examplecode.R;
 import com.heisen_berg.examplecode.ui.ElasticDragDismissLayout;
 import com.heisen_berg.examplecode.ui.InkPageIndicator;
 import com.heisen_berg.examplecode.ui.ParallaxPageTransformer;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

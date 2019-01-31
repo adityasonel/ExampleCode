@@ -7,7 +7,7 @@
     android:background="@color/background_dark"
     tools:context="com.heisen_berg.examplecode.fabtoggle.FabDetailActivity">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/container"
         android:layout_margin="32dp"
         android:clipToPadding="true"
@@ -36,6 +36,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>

@@ -1,9 +1,9 @@
 package com.heisen_berg.examplecode.fabtoggle;
 
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
+import androidx.cardview.widget.CardView;
 
 import com.heisen_berg.examplecode.R;
 import com.heisen_berg.examplecode.ui.FabTransform;

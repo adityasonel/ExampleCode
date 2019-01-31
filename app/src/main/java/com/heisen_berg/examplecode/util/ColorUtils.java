@@ -17,14 +17,14 @@
 package com.heisen_berg.examplecode.util;
 
 import android.graphics.Bitmap;
-import android.support.annotation.CheckResult;
-import android.support.annotation.ColorInt;
-import android.support.annotation.FloatRange;
-import android.support.annotation.IntDef;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.graphics.Palette;
+import androidx.annotation.CheckResult;
+import androidx.annotation.ColorInt;
+import androidx.annotation.FloatRange;
+import androidx.annotation.IntDef;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.palette.graphics.Palette;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -114,7 +114,7 @@ public class ColorUtils {
      * Check if a color is dark (convert to XYZ & check Y component)
      */
     public static boolean isDark(@ColorInt int color) {
-        return android.support.v4.graphics.ColorUtils.calculateLuminance(color) < 0.5;
+        return androidx.core.graphics.ColorUtils.calculateLuminance(color) < 0.5;
     }
 
     /**
@@ -131,7 +131,7 @@ public class ColorUtils {
                  boolean isDark,
                  @FloatRange(from = 0f, to = 1f) float lightnessMultiplier) {
         float[] hsl = new float[3];
-        android.support.v4.graphics.ColorUtils.colorToHSL(color, hsl);
+        androidx.core.graphics.ColorUtils.colorToHSL(color, hsl);
 
         if (!isDark) {
             lightnessMultiplier += 1f;
@@ -140,7 +140,7 @@ public class ColorUtils {
         }
 
         hsl[2] = MathUtils.constrain(0f, 1f, hsl[2] * lightnessMultiplier);
-        return android.support.v4.graphics.ColorUtils.HSLToColor(hsl);
+        return androidx.core.graphics.ColorUtils.HSLToColor(hsl);
     }
 
     public static @ColorInt
